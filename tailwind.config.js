@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      // Custom colors, fonts, animations go here
+    },
   },
-  plugins: [],
-}
-
+  plugins: [require("tailwindcss-animate")],
+};
