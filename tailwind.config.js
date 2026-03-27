@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      // Custom colors, fonts, animations go here
+      colors: {
+        border: "#e5e7eb",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
